@@ -26,11 +26,11 @@ class Pintores extends Controller
         return view ('vincent');
     }
 
-    public function login(){
+   public function login(){
         request()-> validate([
            'user'=> 'required',
            'password'=> 'required' 
         ]);
-        return 'Datos validos';
+        return view ('index');
     }
 }
